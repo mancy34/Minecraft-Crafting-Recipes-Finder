@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Minecraft Crafting Recipes Finder",
+  "version": "1.0.0",
+  "description": "Find Minecraft crafting recipes, ingredients, and 3\u00d73 crafting patterns offline.",
+  "action": {
+    "default_title": "Minecraft Crafting Recipes Finder",
+    "default_popup": "popup.html"
+  },
+  "icons": {}
+}

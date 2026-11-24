@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minecraft Crafting Recipes Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand-mark">⚒</div>
+      <div><h1>Crafting Recipes</h1><p>Quick Minecraft recipe guide</p></div>
+      <span class="version">1.0</span>
+    </header>
+
+    <section class="search-wrap">
+      <label class="sr-only" for="search">Search recipes</label>
+      <span class="search-icon">⌕</span>
+      <input id="search" type="search" placeholder="Search an item... e.g. torch" autocomplete="off">
+      <button id="clearSearch" class="clear-btn" aria-label="Clear search" title="Clear">×</button>
+    </section>
+
+    <nav id="categories" class="categories" aria-label="Recipe categories"></nav>
+
+    <section class="content">
+      <aside class="results-panel">
+        <div class="panel-heading"><span>RECIPES</span><span id="resultCount">0</span></div>
+        <div id="recipeList" class="recipe-list" aria-live="polite"></div>
+      </aside>
+
+      <section id="detail" class="detail-panel" aria-live="polite">
+        <div class="empty-state"><div class="empty-icon">▦</div><h2>Choose a recipe</h2><p>Select an item to see its crafting pattern and ingredients.</p></div>
+      </section>
+    </section>
+    <footer><span>Unofficial fan-made tool</span><span>Works offline · No sign-in</span></footer>
+  </main>
+  <script src="recipes.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
